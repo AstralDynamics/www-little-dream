@@ -1,1 +1,16 @@
-<header></header>
+<header class='site__header'>
+  <nav class='site__nav'>
+    {% assign current_url = page.url %}
+    {% assign pages = site.pages | sort:"nav_pos" %}
+
+    {% for page in pages %}
+      {% if page.nav_pos >= 0 %}
+        {% if current_url == page.url %}
+          <a href='{{ page.url }}' class='site__nav__item site__nav__item--active'>{{ page.title }}</a>
+        {% else %}
+          <a href='{{ page.url }}' class='site__nav__item site__nav__item--inactive'>{{ page.title }}</a>
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+  </nav>
+</header>

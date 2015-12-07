@@ -1,0 +1,27 @@
+---
+layout: page
+permalink: /attractions
+title: Attractions
+nav_pos: 4
+---
+
+<div class='grid'>
+  <div class='grid__row'>
+    <div class='grid__column grid__column--12'>
+      <h2>Attractions</h2>
+      <p>
+        There's lots to do in Sri Lanka!
+      </p>
+    </div>
+  </div>
+  <div class='grid__row'>
+    {% for attraction in site.attractions %}
+      <div class='grid__column grid__column--6'>
+        <h3>{{ attraction.title }}</h3>
+        <img placeholder='Thumbnail' />
+        <p>{{ attraction.description }}</p>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+

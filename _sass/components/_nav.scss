@@ -1,0 +1,25 @@
+.site__nav {
+  text-transform: uppercase;
+  padding: 1.5em;
+}
+
+.site__nav__item {
+  text-decoration: none;
+  border-bottom: solid 2px;
+  margin-right: 1.5em;
+}
+
+.site__nav__item:last-child {
+  margin-right: 0;
+}
+
+.site__nav__item--active {
+  color: $oil-black;
+  border-color: $milano-red;
+}
+
+.site__nav__item--inactive {
+  color: $empress-grey;
+  border-color: transparent;
+}
+

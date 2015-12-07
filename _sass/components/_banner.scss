@@ -1,0 +1,21 @@
+.site__banner {
+  background: $white-smoke;
+  padding: 3em 0;
+  font-family: $serif-font;
+  text-align: center;
+}
+
+.site__banner__title {
+  color: $milano-red;
+  font-size: 42px;
+  margin: 0;
+}
+
+.site__banner__tagline {
+  font-family: $sans-font;
+  font-size: 20px;
+  margin: 0;
+  position: relative;
+  top: -10px;
+}
+

@@ -1,0 +1,20 @@
+* {
+  box-sizing: border-box;
+}
+
+img[placeholder] {
+  min-height: 8em;
+  width: 100%;
+  display: block;
+  background: $white-smoke;
+
+  &:before {
+    display: block;
+    content: attr(placeholder);
+    width: 100%;
+    text-align: center;
+    padding-top: 2em;
+    font-size: 1.5em;
+    color: $empress-grey;
+  }
+}

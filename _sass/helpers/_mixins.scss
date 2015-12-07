@@ -1,0 +1,48 @@
+@mixin column($width, $gutter:0) {
+  padding: 0 $gutter;
+  width: $width;
+}
+
+@mixin responsive-grid($divisions, $gutter:1em) {
+
+  .grid {
+    overflow: hidden;
+  }
+
+  .grid__row {
+    display: block;
+    overflow: hidden;
+  }
+
+  @for $i from 0 through $divisions {
+    .grid__column--#{$i} {
+      $width: ($i / $divisions) * 100%;
+      @include column($width, $gutter / 2);
+    }
+  }
+
+  .grid__column--no-gutter {
+    padding: 0 !important;
+  }
+
+  .grid__column {
+    float: left;
+  }
+
+  .grid__row div:first-child {
+    padding-left: $gutter;
+  }
+
+  .grid__row div:last-child {
+    padding-right: $gutter;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .grid__column {
+      width: auto;
+      float: none;
+      padding: 0 $gutter;
+    }
+  }
+}
+

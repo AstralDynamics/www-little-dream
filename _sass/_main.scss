@@ -2,8 +2,14 @@
 @import 'helpers/mixins';
 
 @import 'base/typography';
+@import 'base/reset';
 @import 'base/grid';
 
 @import 'layout/header';
 @import 'layout/footer';
+@import 'layout/content';
+
+@import 'components/nav';
+@import 'components/banner';
+@import 'components/pricing-grid';
 
