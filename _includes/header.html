@@ -1,14 +1,29 @@
 <header class='site__header'>
-  <nav class='site__nav'>
-    {% assign current_url = page.url %}
-    {% assign pages = site.pages | sort:"nav_pos" %}
+  {% assign current_url = page.url %}
+  {% assign pages = site.pages | sort:"nav_pos" %}
 
+  <nav class='site__nav site__nav--big'>
     {% for page in pages %}
       {% if page.nav_pos >= 0 %}
         {% if current_url == page.url %}
           <a href='{{ page.url }}' class='site__nav__item site__nav__item--active'>{{ page.title }}</a>
         {% else %}
           <a href='{{ page.url }}' class='site__nav__item site__nav__item--inactive'>{{ page.title }}</a>
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+  </nav>
+  <nav class='site__nav site__nav--small'>
+    {% for page in pages %}
+      {% if page.nav_pos >= 0 %}
+        {% if current_url == page.url %}
+          <a href='{{ page.url }}' class='site__nav__item site__nav__item--active'>
+            <i class='fa fa-{{ page.icon }}'></i>
+          </a>
+        {% else %}
+          <a href='{{ page.url }}' class='site__nav__item site__nav__item--inactive'>
+            <i class='fa fa-{{ page.icon }}'></i>
+          </a>
         {% endif %}
       {% endif %}
     {% endfor %}

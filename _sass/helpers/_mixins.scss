@@ -29,11 +29,11 @@
     float: left;
   }
 
-  .grid__row div:first-child {
+  .grid__row > div:first-child {
     padding-left: $gutter;
   }
 
-  .grid__row div:last-child {
+  .grid__row > div:last-child {
     padding-right: $gutter;
   }
 
