@@ -9,3 +9,10 @@ description: >
 baseurl: ""
 url: "http://littledreamdambulla.com"
 markdown: kramdown
+collections:
+  attractions:
+    output: true
+    permalink: /attraction/:path/
+  activities:
+    output: true
+    permalink: /activity/:path/

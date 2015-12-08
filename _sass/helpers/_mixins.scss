@@ -12,6 +12,7 @@
   .grid__row {
     display: block;
     overflow: hidden;
+    padding: 0 $gutter / 2;
   }
 
   @for $i from 0 through $divisions {
@@ -27,14 +28,6 @@
 
   .grid__column {
     float: left;
-  }
-
-  .grid__row > div:first-child {
-    padding-left: $gutter;
-  }
-
-  .grid__row > div:last-child {
-    padding-right: $gutter;
   }
 
   @media only screen and (max-width: 600px) {

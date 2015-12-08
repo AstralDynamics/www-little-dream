@@ -1,0 +1,15 @@
+---
+layout: default
+---
+
+<main class='site__content'>
+  <a href='/attractions'>&laquo; Back to Attractions</a>
+  <h2>{{ page.title }}</h2>
+  <div>
+    {% for photo in page.photos %}
+      <img src='{{ photo }}' />
+    {% endfor %}
+  </div>
+  {{ content }}
+  <a href='/attractions'>&laquo; Back to Attractions</a>
+</main>
