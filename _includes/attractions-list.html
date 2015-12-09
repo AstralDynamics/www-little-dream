@@ -1,0 +1,31 @@
+{% assign attractions = include.attractions or site.attractions %}
+
+<div class='grid__row attractions'>
+  {% for attraction in attractions %}
+    <div class='grid__column grid__column--4 attractions__item'>
+      <a href='{{ attraction.url }}'>
+        <h3 class='attractions__item__title'>{{ attraction.title }}</h3>
+        <img class='attractions__item__thumbnail' src='{{ attraction.photos[0] }}'/>
+      </a>
+      <!--<p>{{ attraction.content }}</p>-->
+      {% if attraction.location %}
+        <div class='attractions__item__meta'>
+          <i class='fa fa-map-marker'></i>
+          {{ attraction.location }}
+        </div>
+      {% endif %}
+      {% if attraction.distance %}
+        <div class='attractions__item__meta'>
+          <i class='brand fa fa-clock-o'></i>
+          {{ attraction.distance }}
+        </div>
+      {% endif %}
+      {% if attraction.wiki %}
+        <div class='attractions__item__meta'>
+          <i class='brand fa fa-wikipedia-w'></i>
+          <a href='{{ attraction.wiki }}'>Wikipedia</a>
+        </div>
+      {% endif %}
+    </div>
+  {% endfor %}
+</div>
