@@ -3,8 +3,13 @@
   width: $width;
 }
 
-@mixin responsive-grid($divisions, $gutter:1em) {
+@mixin mobile-breakpoint() {
+  @media only screen and (max-width: $mobile-width) {
+    @content;
+  }
+}
 
+@mixin responsive-grid($divisions, $gutter:1em) {
   .grid {
     overflow: hidden;
   }
