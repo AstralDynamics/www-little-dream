@@ -35,7 +35,7 @@
     float: left;
   }
 
-  @media only screen and (max-width: 600px) {
+  @include mobile-breakpoint {
     .grid__column {
       width: auto;
       float: none;

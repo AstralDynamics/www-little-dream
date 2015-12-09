@@ -15,7 +15,7 @@
   height: 150px;
 }
 
-@media only screen and (max-width: 600px) {
+@include mobile-breakpoint {
   .attractions__item__thumbnail {
     width: 100%;
     height: auto;
