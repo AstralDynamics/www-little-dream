@@ -1,4 +1,5 @@
 ---
+layout: attraction
 title: Elephant Ride
 photos:
   - http://www.littledreamdambulla.com/activities/u/6.jpg

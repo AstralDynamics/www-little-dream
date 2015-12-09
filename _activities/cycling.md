@@ -1,4 +1,5 @@
 ---
+layout: attraction
 title: Cycling
 photos:
   - http://www.littledreamdambulla.com/activities/u/5.jpg
