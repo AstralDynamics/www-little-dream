@@ -1,4 +1,5 @@
 ---
+layout: attraction
 title: Boat Tour
 distance: 10 minute drive
 photos:

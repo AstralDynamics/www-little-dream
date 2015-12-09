@@ -1,4 +1,5 @@
 ---
+layout: attraction
 title: Kandalama Lakeside
 photos:
   - http://www.littledreamdambulla.com/activities/2/kandalama-lake2.jpg
