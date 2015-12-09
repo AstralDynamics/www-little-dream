@@ -56,8 +56,8 @@ icon: binoculars
     {% for activity in site.activities %}
       <div class='grid__column grid__column--4 attractions__item'>
         <a href='{{ activity.url }}'>
-          <h3 class='activities__item__title'>{{ activity.title }}</h3>
-          <img class='activities__item__thumbnail' src='{{ activity.photos[0] }}'/>
+          <h3 class='attractions__item__title'>{{ activity.title }}</h3>
+          <img class='attractions__item__thumbnail' src='{{ activity.photos[0] }}'/>
         </a>
         {% if activity.location %}
           <div class='attractions__item__meta'>
