@@ -1,5 +1,6 @@
 ---
 title: Boat Tour
+distance: 10 minute drive
 photos:
   - http://www.littledreamdambulla.com/activities/3/pleasure-island-dambulla.jpg
   - http://www.littledreamdambulla.com/activities/3/pleasure-island-dambulla2.jpg
