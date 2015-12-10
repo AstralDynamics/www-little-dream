@@ -1,6 +1,6 @@
 ---
 layout: attraction
-title: Anuradhapurna
+title: Anuradhapura
 distance: 1:30h drive
 location: Anuradhapura
 wiki: https://en.wikipedia.org/wiki/Anuradhapura
@@ -10,5 +10,10 @@ photos:
   - http://www.littledreamdambulla.com/attttttt/9.jpg
 ---
 
-Visit the countries oldest city dated back to the 5th century BC, walk through the ruins and discover the ancient remains of an old civilization, adorned with beautiful man made lakes. The area is plenty of species of birds and monkeys. It’s in Anuradhapura where you can see the most historical tree in the world. It belongs to the 3rd century BC. The Bo tree is venerated by thousands of Buddhist all over the world.
+Anuradhapura, Sri Lanka's oldest city, dates back to the 5th century BC. Walk 
+through the ruins and discover the remains of an ancient civilization. The area
+ full of birds and monkeys. Here you 
+can see the most historic tree in the world. 
+The Bo tree is from the 3rd Century BC and is a venerated by Buddhist 
+as a cutting from the tree under which Buddha became enlightened.
 
